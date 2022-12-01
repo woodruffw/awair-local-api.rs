@@ -1,7 +1,13 @@
-/// Rust bindings for devices that support the Awair Local API.
-///
-/// The Awair Local API is documented here:
-/// <https://support.getawair.com/hc/en-us/articles/360049221014-Awair-Element-Local-API-Feature>
+//! Rust bindings for devices that support the Awair Local API.
+//!
+//! The Awair Local API is documented here:
+//! <https://support.getawair.com/hc/en-us/articles/360049221014-Awair-Element-Local-API-Feature>
+
+#![deny(rustdoc::broken_intra_doc_links)]
+#![deny(missing_docs)]
+#![allow(clippy::redundant_field_names)]
+#![forbid(unsafe_code)]
+
 use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
 use thiserror::Error;
@@ -139,6 +145,7 @@ impl Awair {
             .json::<AirData>()?)
     }
 
+    /// Request the Awair's configuration state.
     pub fn config(&self) -> Result<DeviceConfig, Error> {
         let config = self.api_base.join("/settings/config/data")?;
 
