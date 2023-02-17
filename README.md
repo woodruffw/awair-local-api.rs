@@ -1,7 +1,7 @@
 awair-local-api
 ===============
 
-[![Build Status](https://img.shields.io/github/workflow/status/woodruffw/awair-local-api.rs/CI/main)](https://github.com/woodruffw/awair-local-api.rs/actions?query=workflow%3ACI)
+[![CI](https://github.com/woodruffw/awair-local-api.rs/actions/workflows/ci.yml/badge.svg)](https://github.com/woodruffw/awair-local-api.rs/actions/workflows/ci.yml)
 [![Crates.io](https://img.shields.io/crates/v/awair-local-api)](https://crates.io/crates/awair-local-api)
 [![Documentation](https://docs.rs/awair-local-api/badge.svg)](https://docs.rs/awair-local-api)
 
